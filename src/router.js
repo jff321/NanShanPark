@@ -47,7 +47,7 @@ export default new Router({
       component: () => import('./views/shop/Shop.vue'),
       meta: {
         title: '商场',
-        isShowBar: true // 用于配置是否显示bar
+        isShowBar: false // 用于配置是否显示bar
       }
     },
     {
@@ -78,13 +78,58 @@ export default new Router({
       }
     },
     {
-      path: '/couponDetail/:id',
-      name: 'couponDetail',
-      component: () => import('./views/index/CouponDetail.vue'),
+      path: '/appointment',
+      name: 'appointment',
+      component: () => import('./views/index/Appointment.vue'),
       meta: {
-        title: '优惠券明细',
+        title: '预约',
         isShowBar: true // 用于配置是否显示bar
       }
-    }
+    },
+    {
+      path: '/choice',
+      name: 'choice',
+      component: () => import('./views/index/Choice.vue'),
+      meta: {
+        title: '选择预约',
+        isShowBar: true // 用于配置是否显示bar
+      }
+    },
+    {
+      path: '/choiceDetail',
+      name: 'choiceDetail',
+      component: () => import('./views/index/ChoiceDetail.vue'),
+      meta: {
+        title: '预约详情',
+        isShowBar: true // 用于配置是否显示bar
+      }
+    },
+    {
+      path: '/couponConfirm',
+      name: 'couponConfirm',
+      component: () => import('./views/index/CouponConfirm.vue'),
+      meta: {
+        title: '确认订单',
+        isShowBar: false // 用于配置是否显示bar
+      }
+    },
+    {
+      path: '/track',
+      name: 'track',
+      component: () => import('./views/index/Track.vue'),
+      meta: {
+        title: '赛道',
+        isShowBar: true // 用于配置是否显示bar
+      }
+    },
+    {
+      path: '/pay',
+      name: 'pay',
+      component: () => import('./views/index/Pay.vue'),
+      meta: {
+        title: '支付',
+        isShowBar: false // 用于配置是否显示bar
+      }
+    },
   ]
 })

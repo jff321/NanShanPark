@@ -7,14 +7,14 @@ import router from './router'
 
 // axios 配置
 axios.defaults.timeout = 6000;
-axios.defaults.baseURL = 'http://api.51miaozhuan.com/';
-// axios.defaults.baseURL = 'http://192.168.0.120/';
+// axios.defaults.baseURL = 'http://api.51miaozhuan.com/';
+axios.defaults.baseURL = 'http://chixiaoauto.com/wap/';
 
 // http request 拦截器
 axios.interceptors.request.use(
   config => {
     if (localStorage.getItem('token')) {
-      config.headers.authToken = `${localStorage.getItem('token')}`;
+      config.headers.Authorization = `${localStorage.getItem('token')}`;
     } else { // 登录过验证token
       loginRedirect();
     }

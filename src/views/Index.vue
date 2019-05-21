@@ -18,28 +18,32 @@
       />
     </div>
     <!--快捷通道-->
-    <div class="pt-2 Border pass">
+    <div class="pt-2 Border">
       <!-- 居中 -->
       <van-row type="flex" justify="center">
         <van-col span="6" class="text-center py-2">
-          <img src="@/assets/saidao.png" alt="" class="rounded-circle" width="45">
-          <p class="mt-2 mb-0 Font">赛道</p>
+          <router-link to="/track">
+            <img src="@/assets/track.png" alt="" class="rounded-circle" width="45">
+            <p class="mt-2 mb-0 Font">赛道</p>
+          </router-link>
         </van-col>
         <van-col span="6" class="text-center py-2">
           <router-link to="/coupon">
-            <img src="@/assets/quan.jpg" alt="" class="rounded-circle" width="45">
+            <img src="@/assets/quan.png" alt="" class="rounded-circle" width="45">
             <p class="mt-2 mb-0 Font">赛道券</p>
           </router-link>
         </van-col>
         <van-col span="6" class="text-center py-2">
           <router-link to="/activity">
-            <img src="@/assets/activity.jpg" alt="" class="rounded-circle" width="45">
+            <img src="@/assets/activity.png" alt="" class="rounded-circle" width="45">
             <p class="mt-2 mb-0 Font">活动</p>
           </router-link>
         </van-col>
         <van-col span="6" class="text-center py-2">
-          <img src="@/assets/yuyue.png" alt="" class="rounded-circle" width="45">
-          <p class="mt-2 mb-0 Font">预约</p>
+          <router-link to="/appointment">
+            <img src="@/assets/yuyue.png" alt="" class="rounded-circle" width="45">
+            <p class="mt-2 mb-0 Font">预约</p>
+          </router-link>
         </van-col>
       </van-row>
     </div>
@@ -125,11 +129,5 @@
   a{
     text-decoration: none;
     color: #212529;
-  }
-  .pass{
-    background: linear-gradient(to bottom, #FF7159, white);
-    background: -ms-linear-gradient(to bottom, #FF7159, white);
-    background: -webkit-linear-gradient(to bottom, #FF7159, white);
-    background: -moz-linear-gradient(to bottom, #FF7159, white);
   }
 </style>

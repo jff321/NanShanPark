@@ -3,8 +3,9 @@
     <router-view></router-view>
     <van-tabbar
       v-model="active"
-      active-color="#FF7159"
+      active-color="#0033CC"
       v-show="$route.meta.isShowBar"
+      fixed
     >
       <van-tabbar-item icon="wap-home" to="/index">首页</van-tabbar-item>
       <van-tabbar-item icon="cluster-o" to="/order">订单</van-tabbar-item>

@@ -1,3 +1,6 @@
+body{
+  font-size: 12px!important;
+}
 .Border{
   /*border-top: 3px solid #E5E5E5;*/
   border-bottom: 3px solid #E5E5E5;
@@ -5,24 +8,19 @@
 .Font{
   font-size: 12px;
 }
-.van-nav-bar{
-  background-color: #FF7159;
-}
-.van-nav-bar__title{
-  color: white;
-}
-.van-nav-bar__text{
-  color: white;
-}
-.van-icon-arrow-left:before{
-  color: white;
-}
 
 .van-button--default{
-  background-color: #FF7159;
+  background-color: #0033CC;
   color: white;
 }
 
 .listRow{
   background-color: #fafafa;
+}
+.van-checkbox__label{
+  color: darkolivegreen!important;
+  font-size: 14px!important;
+}
+.Font-color{
+  color: #0033CC;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-center my-5 pt-4 pb-2">
-      <img src="../assets/logo.jpg" alt="" class="rounded-circle" style="width: 128px;">
+      <img src="../assets/LOGO4.png" alt="" style="width: 128px;">
     </div>
     <div class="px-3">
       <van-cell-group>
@@ -21,12 +21,12 @@
           label="短信验证码"
           placeholder="请输入短信验证码"
         >
-          <van-button slot="button" size="small" type="primary" plain>发送验证码</van-button>
+          <van-button slot="button" size="small" style="background-color: white;color: #0033CC;">发送验证码</van-button>
         </van-field>
       </van-cell-group>
     </div>
     <div class="px-3 mt-4">
-      <van-button type="primary" block>登录</van-button>
+      <van-button block @click="toIndex">登录</van-button>
     </div>
   </div>
 </template>
@@ -45,6 +45,11 @@
       return{
         username: '',
         sms: ''
+      }
+    },
+    methods: {
+      toIndex(){
+        this.$router.push('/index')
       }
     }
   }
